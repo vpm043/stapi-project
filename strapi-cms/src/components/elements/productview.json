@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_elements_productviews",
+  "info": {
+    "displayName": "Productview"
+  },
+  "options": {},
+  "attributes": {
+    "items": {
+      "type": "string"
+    }
+  }
+}

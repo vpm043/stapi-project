@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "filter_cards",
+  "info": {
+    "singularName": "filter-card",
+    "pluralName": "filter-cards",
+    "displayName": "FilterCard",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Filtercard": {
+      "type": "dynamiczone",
+      "components": [
+        "elements.category-card"
+      ]
+    }
+  }
+}

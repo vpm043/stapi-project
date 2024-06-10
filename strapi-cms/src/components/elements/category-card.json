@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_elements_category_cards",
+  "info": {
+    "displayName": "CategoryCard"
+  },
+  "options": {},
+  "attributes": {
+    "categorytitle": {
+      "type": "string"
+    },
+    "CategoryItem": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.card"
+    }
+  }
+}
