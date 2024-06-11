@@ -17,19 +17,14 @@ interface DropdownItem {
 }
 
 const fetchProducts = async (): Promise<Product[]> => {
-    const token = "eyJhbGciOiJSUzUxMiIsInR5cCI6IkpXVCIsImtpZCI6IjliN2JiZmVlMzQzZDVkNDQ5ZGFkODhmMjg0MGEyZTM3YzhkZWFlZTg5NjM4MGQ1ODA2YTc4NWVkMWQ1OTc5ZjAifQ.eyJvcmdhbml6YXRpb24iOnsiaWQiOiJqWGJHYkZEQnpuIiwic2x1ZyI6InNpbmdsZXRvbmNvbW1lcmNlIiwiZW50ZXJwcmlzZSI6ZmFsc2UsInJlZ2lvbiI6InVzLWVhc3QtMSJ9LCJhcHBsaWNhdGlvbiI6eyJpZCI6IkdZZHFpUHlZak4iLCJraW5kIjoiaW50ZWdyYXRpb24iLCJwdWJsaWMiOmZhbHNlfSwic2NvcGUiOiJtYXJrZXQ6YWxsIiwiZXhwIjoxNzE4MDQ5NDU4LCJ0ZXN0Ijp0cnVlLCJyYW5kIjowLjU4OTU0NjYwNDQ4MDUxODQsImlhdCI6MTcxODA0MjI1OCwiaXNzIjoiaHR0cHM6Ly9jb21tZXJjZWxheWVyLmlvIn0.BvN0Ziodfm7Yc7EXdWo0O-bePci6lg88kE8Ps9Rs8aIKvQpVaD36ZKin147jxAZJM03ZJy-c4xeQHHU2hLamaK5kmsSpUhxYtAIayV4zx4ryZPTxYAgJZ_a_qdvIXH_q5aujNjzRIF5vIoyRLHtfst2rw22QpLdvZ26GxAUtEGRAmB3mbrfiEvg9p-CVT0F3JMwEt8FoVMblZd13B8fbWodU1oXAVom0jdRwTDh6mJlT75Fr086-yaN2Nt8gB5r7m_gV8eyexgI526Kgqj9IHofr7g_x-sm_UzLmKeeA7TpxoU68Bu5LO1tQLrG0kDC2-OtVs9reb_Jnq2St9gRQo59moXnGdsqqo1u4Vn3wW6pT4uyQbmfSbIJ86T36SkpfyaAryYPJ-6fCq58aRv66lGXl_zqGsiK0_XKZPKlv3fLjpJu-_0ZcsNygKy6tytJeibGnGUbpfXIJre7x3dtYG1GEQuLMhhHl2nYm3Iw3eWHIIJEvCMsgBZY7HI4SZuEL7OHnXZrbIXfDYRrtk7AKCQ8Mzl7H3Pze6mVneue8CqFBygwGqAEO-d546ffSm4KHtXU0UtZh7LNl3RzU5x8pMiZeiVwpZeAAM3tbsyD_kvGirEuDyZfyxJzhqISopQPrYwocOvxyOdKUpKZk36n_9nKc9XbfeYiimpdL2IkdbzE";
+    const token = "eyJhbGciOiJSUzUxMiIsInR5cCI6IkpXVCIsImtpZCI6IjliN2JiZmVlMzQzZDVkNDQ5ZGFkODhmMjg0MGEyZTM3YzhkZWFlZTg5NjM4MGQ1ODA2YTc4NWVkMWQ1OTc5ZjAifQ.eyJvcmdhbml6YXRpb24iOnsiaWQiOiJqWGJHYkZEQnpuIiwic2x1ZyI6InNpbmdsZXRvbmNvbW1lcmNlIiwiZW50ZXJwcmlzZSI6ZmFsc2UsInJlZ2lvbiI6InVzLWVhc3QtMSJ9LCJhcHBsaWNhdGlvbiI6eyJpZCI6IkdZZHFpUHlZak4iLCJraW5kIjoiaW50ZWdyYXRpb24iLCJwdWJsaWMiOmZhbHNlfSwic2NvcGUiOiJtYXJrZXQ6YWxsIiwiZXhwIjoxNzE4MTM0MzMwLCJ0ZXN0Ijp0cnVlLCJyYW5kIjowLjU5ODA2NDUxMTUzMjU3MjksImlhdCI6MTcxODEyNzEzMCwiaXNzIjoiaHR0cHM6Ly9jb21tZXJjZWxheWVyLmlvIn0.ItEz6MoYhhfwPUaGQvrAg1-vtxPcRFN50pvqWUbsKHHb3aXygKggn5I6Cdu1O2-Sgetd6uyG68kSBIg-u3zzR0bcgAnWjZGzqtb4r8m7TGwCAYXlrAUQVDJ91AO1OFxo-njYGecGTqr-BPxJOeuaAENPyM-PAJSO431aWxpPs_b8CO9nNhy90Iy4OLDqjFfzYOcOulkQBKyjoTx_UW0o6s8AtztzG2zHOd2e-sFneborhDVQ0Guq-rYRjkXhwESYRoqm1P-xlVmfkB1YqZ32kBJdpzy-s77Hgeuw2VwriV3Ddhrk9ccSEZUEb5tA2U2gpXZiva2f3CgSkqyTslQ3eZJ38z16L447J0B8Jd96WPgUueVC-YEeAUtstyRMEsogPzjYuLpdqvQMx-8D3Eq9adU-hUo7PQoLJIVhX-nOzglG4xRQ0n8xlHAm1njUhOtF_DUUwDZiHDVB9kcarloGoGvIxioTIwPb1RHGoUQwtaJGGo_gTPWWdKjGMsQ1fkBN-rZ8pKw3A_ihPVYxdHA2oyIPseptopTCxPnpzR6zcZaMgGgUOdGQZBBuMG-QJqX4sGAQbPf809f4B5an3yOLelpHVhToT0hNPeHxRrjbxt6Bum3LrEn_MiZfCHea3z_3Iy0OzxzrXiOnc7-OY416DxUqaNFiMmpF5vyW-HGRcLQ";
 
     try {
         const productsResponse = await fetch(`https://singletoncommerce.commercelayer.io/api/skus?include=prices`, {
             headers: {
                 "Content-Type": "application/json",
                 'Authorization': `Bearer ${token}`
-            },
-            body: JSON.stringify({
-                grant_type: 'client_credentials',
-                client_id: 'ls0_29nVfjraaA-S9xNDC2rjW04F4NzErUVUmoPfL4M',
-                client_secret: 'X6stYzFf4tOF3IAhlunW58W_JUv5IKdkc4YqKMvh5zk'
-            })
+            }
         });
 
         if (!productsResponse.ok) {
