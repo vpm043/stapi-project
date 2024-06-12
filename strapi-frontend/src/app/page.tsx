@@ -24,7 +24,7 @@ interface Product {
 const fetchProducts = async (): Promise<{ products: Product[]; apiProduct: { products: any[] } }> => {
     const baseUrl = process.env.NEXT_PUBLIC_STRAPI_URL;
     try {
-        const productResponse = await fetch(`${baseUrl}/api/filter-cards?populate[Filtercard][populate]=*`,{ next: { revalidate: 1 } });
+        const productResponse = await fetch(`${baseUrl}/api/filter-cards?populate[Filtercard][populate]=*`,{ next: { revalidate: 0 } });
         if (!productResponse.ok) {
             throw new Error('Network response for products was not ok');
         }
