@@ -4,7 +4,7 @@ export default function NavBar() {
             <div className="flex justify-between shadow-md py-4 px-8 relative">
                 <div>
                     <Image
-                        src="https://digitaworks-backend.blr1.digitaloceanspaces.com/7fe9a99821685448671c4323907c2bde.png"
+                        src="https://strapi.io/assets/strapi-logo-dark.svg"
                         width={100}
                         height={100}
                         alt="logo"
